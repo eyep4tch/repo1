@@ -1,0 +1,30 @@
+int main()
+{
+int a[]={1,2,3,4,5,6,7,8,9,10},countodd=0,counteven=0,sumeven=0,sumodd=0;
+
+int size=sizeof(a)/sizeof(int);
+for(int i=0;i<10;i++)
+{
+if(a[i]%2==0)
+{   
+    printf("%d\n",a[i]);
+    printf("even \n");
+    counteven++;
+    sumeven+=a[i];
+    
+    
+}
+if(a[i]%2!=0)
+{
+    
+    printf("%d\n",a[i]);
+    printf("odd \n");
+    countodd++;
+    sumodd=sumodd+a[i];
+    
+}
+}
+printf("total even count %d \n",counteven);
+printf("total odd count %d\n",countodd);
+printf("sum of even %d\n",sumeven);
+printf("sum of odd %d\n",sumodd);
