@@ -1,0 +1,69 @@
+#include <stdio.h>
+
+int main() {
+
+  
+int arr[5][5],r,c,i,j,counteven=0,countodd=0,sum=0;
+
+/*
+for(i=0;i<4;i++)
+{
+    for(j=0;j<5;j++)
+    {
+        printf("a[%d][%d]=%d\n",i,j,arr[i][j]);
+    }
+}
+    return 0;
+}
+*/
+
+printf("no. of rows\n");
+scanf("%d",&r);
+printf("enter the columns\n");
+scanf("%d",&c);
+for(i=0;i<r;i++)
+{
+    for(j=0;j<c;j++)
+    {   printf("enter the elements %d %d\n",i,j);
+        scanf("%d",&arr[i][j]);
+    }
+}
+for(i=0;i<r;i++)
+{
+    for(j=0;j<c;j++)
+    {
+        printf("a[%d][%d]=%d\n",i,j,arr[i][j]);
+    }
+}
+
+for(i=0;i<r;i++)
+{
+  for(j=0;j<c;j++)
+{
+
+if(arr[i][j]%2==0)
+{
+printf("a[%d][%d]=even\n",i,j);
+ counteven++; 
+}
+else
+{
+  printf("a[%d][%d]=odd\n",i,j);
+  countodd++;
+}
+
+}
+}
+
+printf("even values are %d\n",counteven);
+printf("odd values are %d\n",countodd);
+for(i=0;i<r;i++)
+{
+  for(j=0;j<c;j++)
+{
+  sum=sum+arr[i][j];
+}
+}
+printf("sum of elements is %d\n",sum);
+return 0;
+}
