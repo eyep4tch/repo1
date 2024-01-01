@@ -1,0 +1,29 @@
+ int choose,c,a,b;
+    printf("enter first operand \n");
+    scanf("%d",&a);
+    printf("enter second operand \n");
+    scanf("%d",&b);
+    
+    printf("enterfrom the given choices :\n ");
+    printf("press 1 to add \n");
+    printf("press 2 to subtract \n");
+    printf("press 3 to multiply \n");
+    scanf("%d",&choose);
+    switch(choose)
+    { 
+        case 1:
+        c=a+b;
+        printf("value comes out to be %d",c);
+        break;
+        case 2:
+        c=a-b;
+        printf("value %d",c);
+        break;
+        case 3:
+        c=a*b;
+        printf("value %d",c);
+        break;
+        default:
+        printf("choose from the given choices");
+    }
+    
