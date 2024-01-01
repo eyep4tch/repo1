@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+int a[10],i;
+printf("enter the elements \n");
+for(i=0;i<10;i++)
+{
+    scanf("%d",&a[i]);
+}
+for(i=0;i<10;i++)
+{
+    printf("index %d \n",i);
+    printf("\n%d\n",a[i]);
+}
+
+int low=0,mid,high=10,el;
+printf("enter theb element to be searched");
+scanf("%d",&el);
+while(low<=high)
+{
+    mid=(low+high)/2;
+    if(a[mid]==el)
+    {
+        printf("positionn is %d",mid);
+    }
+    if(a[mid]<el)
+    {
+        low=mid+1;
+    }
+    
+    else
+    {
+        high=mid-1;
+    }
+ 
+    
+    
+}
+
+
+    return 0;
+}
