@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+int main() 
+{
+//STRING BASIC INPUT OUTPUT :
+
+    char str1[10],str2[10];
+    printf("enter the first string");
+    gets(str1);
+    printf("enter the second string");
+    gets(str2);
+    printf("entered strings are\n");
+    puts(str1);
+    puts(str2);
+
+    //we could use scanf in place of gets and puts.
+    //drawback of using scanf is that it does not print strings after the space.
+    //for an instance we input a string "hello world" by using scanf it will only store only the word hello because of the space occurs after the word hello.
+
+// STRING STRCPY FUNCTION : 
+
+    char a[10],b[10];
+    printf("enter yo 1st string\n");
+    gets(a);
+    printf("enter yo 2nd string\n");
+    gets(b);
+    strcpy(a,b);     //here 'strcpy' helps to copy the string of second to the first i.e. b-->a 
+    printf("strings\n");
+    puts(a);
+    puts(b);
+
+  // STRING STRLEN FUNCTION :
+  
+    char a[10];
+    printf("enter yo string here..\n");
+    gets(a);
+    int length=strlen(a);
+    printf("the character count of entered string is %d\n",length);
+
+  //here 'strlen' is a predefined function which returns the length of a string including spaces.
+  
+    return 0;
+}
+  
