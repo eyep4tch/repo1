@@ -2,7 +2,7 @@
 
 int main() 
 {
-//STRING BASIC INPUT OUTPUT :
+// STRING BASIC INPUT OUTPUT :
 
     char str1[10],str2[10];
     printf("enter the first string");
