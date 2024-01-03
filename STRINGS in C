@@ -2,7 +2,9 @@
 
 int main() 
 {
+
 // STRING BASIC INPUT OUTPUT :
+
 
     char str1[10],str2[10];
     printf("enter the first string");
@@ -17,7 +19,9 @@ int main()
     //drawback of using scanf is that it does not print strings after the space.
     //for an instance we input a string "hello world" by using scanf it will only store only the word hello because of the space occurs after the word hello.
 
+
 // STRING STRCPY FUNCTION : 
+
 
     char a[10],b[10];
     printf("enter yo 1st string\n");
@@ -29,8 +33,10 @@ int main()
     puts(a);
     puts(b);
 
+
   // STRING STRLEN FUNCTION :
-  
+
+
     char a[10];
     printf("enter yo string here..\n");
     gets(a);
