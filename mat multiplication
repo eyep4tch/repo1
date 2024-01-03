@@ -1,3 +1,21 @@
+
+     int mat1[10][10],mat2[10][10],r1,c1,r2,c2,i,j,k,p[10][10];
+printf("enter the rows ");
+scanf("%d",&r1);
+printf("enter the columns");
+scanf("%d",&c1);
+for(i=0;i<r1;i++)
+{
+    for(j=0;j<c1;j++)
+    {
+        printf("enter elements in mat1[%d,%d]",i,j);
+        scanf("%d",&mat1[i][j]);
+    }
+}
+
+printf("enter the rows ");
+scanf("%d",&r2);
+printf("enter the columns");
 scanf("%d",&c2);
 for(i=0;i<r2;i++)
 {
@@ -37,3 +55,4 @@ else
 }
 return 0;
 }
+
