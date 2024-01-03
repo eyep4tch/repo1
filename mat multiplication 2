@@ -1,0 +1,63 @@
+#include <stdio.h>
+int main()
+{
+int mat1[10][10],mat2[10][10],r1,c1,r2,c2,i,j,k,p[10][10];
+//Defining the order of the first Matrix
+
+printf("Define ROWS in MATRIX 1\n");
+scanf("%d",&r1);
+printf("Define COLUMNS in MATRIX 1\n");
+scanf("%d",&c1);
+//filling in the elements  
+
+for(i=0;i<r1;i++)
+{
+    for(j=0;j<c1;j++)
+    {
+        printf("Enter the Elements in MATRIX 1 of ROW[%d] and COLUMN[%d]\n",i+1,j+1);
+        scanf("%d",&mat1[i][j]);
+    }
+}
+//Defining the order of the second Matrix
+
+printf("Define ROWS in MATRIX 2\n");
+scanf("%d",&r2);
+printf("Define COLUMNS in MATRiX 2\n");
+scanf("%d",&c2);
+
+//filling in the elements 
+for(i=0;i<r2;i++)
+{
+    for(j=0;j<c2;j++)
+    {
+        printf("ENTER the Elememts in MATRIX 2 of ROW[%d] and COLUMN[%d]\n",i+1,j+1);
+        scanf("%d",&mat2[i][j]);
+    }
+}
+//multiplication of two matrices
+
+for(i=0;i<r1;i++)
+{
+for(j=0;j<c1;j++)
+{
+ p[i][j]=0;
+for(k=0;k<c1;k++)
+{
+ p[i][j]+=mat1[i][k]*mat2[k][j];
+}
+}
+}
+
+//new matrix after the multiplication of two matrices
+
+printf("RESULTANT MATRIX...\n");
+for(i=0;i<r1;i++)
+{
+for(j=0;j<c2;j++)
+{
+   
+ printf("MATRIX 3 [%d][%d]=%d\n",i+1,j+1,p[i][j]);
+}
+}
+return 0;
+}
