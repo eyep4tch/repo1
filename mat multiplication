@@ -1,5 +1,7 @@
+int main()
+{
 
-     int mat1[10][10],mat2[10][10],r1,c1,r2,c2,i,j,k,p[10][10];
+int mat1[10][10],mat2[10][10],r1,c1,r2,c2,i,j,k,p[10][10];
 printf("enter the rows ");
 scanf("%d",&r1);
 printf("enter the columns");
