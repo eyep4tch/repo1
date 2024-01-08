@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main()
+{
+    int el,i,found=0,n,arr[10];
+    printf("enter the no. of elements\n");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        printf("enter the value in array at %d\n",i+1);
+        scanf("%d",&arr[i]);
+    }
+    printf("enter the elements to be seacrhed\n");
+    scanf("%d",&el);
+      for(i=0;i<n;i++)
+    {
+        if(arr[i]==el)
+        {
+            printf("found at loc %d\n",i+1);
+            break;
+            found++;
+        }
+    }
+    if(!found)
+    {
+        printf("not found");
+    }
+    return 0;
+}
