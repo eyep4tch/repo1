@@ -1,0 +1,13 @@
+#include <stdio.h>
+struct structure{
+char name[20];
+int id;
+char address[20];
+};
+void main()
+{
+struct structure stud={"mukul",3434,"lajpat nagar"};
+
+printf("%s\n%d\n%s",stud.name,stud.id,stud.address);
+
+}
